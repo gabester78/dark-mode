@@ -178,6 +178,15 @@ img {
   -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
   box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+
+  .homeLinkHover {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: gold;
+    }
+  }
 }
 
 .dark-mode__toggle {
@@ -249,5 +258,39 @@ img {
   .navbar {
     background-color: #1f2022;
     border: none;
+  }
+  .homeLinkHover {
+    color: white;
+  }
+}
+
+.hero {
+  background-image: url(./images/1_2cdqBbOJUdvqGVKxAi1JtA.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  color: white;
+
+  .heroH1 {
+    font-size: 80px;
+    padding: 40px 0px 30px 0px;
+    font-weight: bold;
+  }
+
+  .heroH4 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .heroBtn {
+    margin-top: 450px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: gold;
+    border: 1px solid white;
   }
 }

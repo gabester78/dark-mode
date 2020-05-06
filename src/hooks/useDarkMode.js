@@ -1,7 +1,9 @@
 import useLocalStorage from "./useLocalStorage";
 
 const useDarkMode = () => {
+  //storedValue
   const [darkMode, setDarkMode] = useLocalStorage(false);
+  //setValue
   const toggleMode = (event) => {
     event.preventDefault();
     if (darkMode === false) {
