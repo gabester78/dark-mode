@@ -292,5 +292,10 @@ img {
     font-weight: bold;
     background-color: gold;
     border: 1px solid white;
+
+    &:hover {
+      background-color: darkgoldenrod;
+      cursor: pointer;
+    }
   }
 }
