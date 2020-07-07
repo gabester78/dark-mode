@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React from "react";
+import useDarkMode from "../hooks/useDarkMode";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleMode = e => {
-    e.preventDefault();
-    setDarkMode(!darkMode);
-  };
+  const [darkMode, toggleMode] = useDarkMode();
   return (
     <nav className="navbar">
-      <h1>Crypto Tracker</h1>
+      <NavLink to="/" activeClassName="homeLinkHover">
+        <h1>Crypto Tracker</h1>
+      </NavLink>
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
-          className={darkMode ? 'toggle toggled' : 'toggle'}
+          className={darkMode ? "toggle toggled" : "toggle"}
         />
       </div>
     </nav>
